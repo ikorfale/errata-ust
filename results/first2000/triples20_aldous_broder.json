@@ -1,0 +1,1 @@
+{"grid": "20x20", "sampler": "aldous_broder", "samples": 2000, "seed": 1, "claws": 1296, "exact_per_claw": 0.0989, "if_independent": 0.1322, "observed_per_claw": 0.0988, "t": -0.54}

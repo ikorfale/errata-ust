@@ -1,0 +1,1 @@
+{"grid": "20x20", "sampler": "wilson", "samples": 5000, "seed": 7, "claws": 1296, "exact_per_claw": 0.0989, "if_independent": 0.1322, "observed_per_claw": 0.0988, "count_mean": 128.052, "count_sd": 10.793451520210938, "exact_count": 128.17928391965228, "t": -0.83}

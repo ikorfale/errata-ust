@@ -85,11 +85,41 @@ marginals wrong and the pairs wrong in opposite directions, and they cancel. Wit
 covariance is off by z +10.1 (−0.0155 against −0.0168): collinear edges in an MST repel each other less than in a
 uniform tree. A raw pair count can hide a pair error behind a marginal error; test the covariance.
 
+## Triples: the determinantal law (`check_triples_small.py`, `check_triples_large.py`)
+
+The uniform spanning tree is determinantal: for any set S of edges, P(S ⊂ T) = det Y[S,S]. On 3×3 this matches
+enumeration on all 220 triples (max error 3.9e-16).
+
+**A law right on every pair and wrong on triples.** An LP over the 192 trees of the 3×3 grid matches all 12 single-edge
+and all 66 pair probabilities exactly and pushes one triple statistic as far as it can. First lesson, found by
+accident: the "U" triples (three sides of one unit square) cannot be moved at all. Every law that matches the pairs
+gives them the same total, 2.5, because the tree structure fixes it (the same way the corner pairs are fixed by the
+singles). An LP range scan over all 220 triples found 164 that can move. The furthest are the claws (three of the
+four edges at the centre vertex): 1/6 each under the uniform law, anywhere from 0.104 to 0.208 under laws that agree on
+every pair.
+
+20,000 trees each, seed 1 (`results/triples3_s1.jsonl`):
+
+| sampler | single edge max \|z\| | all 66 pairs max \|z\| | U triples t | claw t |
+|---|---|---|---|---|
+| Wilson | 1.80 | 2.71 | −0.39 | −0.86 |
+| LP law, claws pushed up | 2.06 | 2.51 | 1.40 | **+11.22** |
+| LP law, claws pushed down | 2.01 | 2.47 | 0.56 | **−23.62** |
+
+Singles and pairs pass for both LP laws; only the claw count catches them.
+
+**20×20** (1,296 claws at the interior vertices, exact mean count 128.18, 5,000 trees; rule in `results/PAIRS_RULE.txt`):
+Aldous–Broder t −0.67; random-weight MST t +66.9 (0.1069 per claw against 0.0989), which says nothing new, since the
+MST already fails single edges. Wilson seed 1 gave t +2.47, inside the 2–3 band, so by the rule seeds 2–8 ran
+(t +0.63, −0.07, +0.58, +0.67, −0.56, −0.83, −0.74); pooled over 40,000 trees t +0.76. Wilson passes. A first
+2,000-tree run, made before I reread the rule, is kept in `results/first2000/` (Wilson t 2.17, the same seed).
+
 ## What a pass does not show
 
-Single edges and pairs are the first two levels of a determinantal law; every k-set has an exact law too
-(det of the k×k block of Y). Passing two levels is not uniformity. On large grids no sampler here was built that is
-right on pairs and wrong on triples, so this check has not been shown to fail one.
+Single edges, pairs and triples are the first three levels of a determinantal law; every k-set has an exact law.
+Passing three levels is not uniformity: the 3×3 LP shows each level can be matched while the next is wrong, and the
+same construction should work one level up. Which triples to test matters: a class that the lower levels already fix
+(corner pairs, U triples) tests nothing new.
 
 ## Run
 
@@ -98,6 +128,8 @@ python3 check_small.py 38400 1
 python3 check_large.py 20 5000 1 wilson      # or aldous_broder, random_mst, random_dfs
 python3 check_pairs_small.py 38400 1
 python3 check_pairs_large.py 20 5000 1 wilson
+python3 check_triples_small.py 20000 1
+python3 check_triples_large.py 20 5000 1 wilson
 python3 draw.py
 ```
 Python 3, numpy, scipy, matplotlib. MIT licence.

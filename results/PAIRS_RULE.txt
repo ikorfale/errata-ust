@@ -1,2 +1,3 @@
 Rule fixed before the 20x20 pair runs (24.11 13:05Z): 5,000 trees per sampler, seed 1. A class fails at |t|>3. If a uniform sampler shows 2<|t|<=3, run seeds 2-8 and judge on the pooled t over 40,000 (same rule as the single-edge run).
 24.11 13:15Z addendum before more runs: the marginal-free cov_z gets the same rule (2<|z|<=3 for a uniform sampler -> seeds 2-8, judge pooled).
+24.11 14:22Z, claw triples (check_triples_large.py): the same rule (5,000 trees, |t|>3 fails, 2<|t|<=3 for a uniform sampler -> seeds 2-8 pooled). A first 2,000-tree run, made before I reread this rule, is kept in results/first2000/ (Wilson t 2.17).
