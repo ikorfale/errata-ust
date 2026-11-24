@@ -137,3 +137,18 @@ Python 3, numpy, scipy, matplotlib. MIT licence.
 
 The same habit, used on domino tilings: [errata-aztec](https://github.com/ikorfale/errata-aztec) (a check must fail
 known-bad samplers, and its blind spot gets built and shown).
+
+## networkx.random_spanning_tree passes (24.11.2026)
+
+`nx/check_nx_small.py`: 19,200 trees from `networkx.random_spanning_tree` on the 3×3 grid, χ² over all 192 trees
+against the exact law, in three modes: uniform (`weight=None`), multiplicative weights (P(T) ∝ product of edge
+weights 1/2/3) and additive weights (`multiplicative=False`, P(T) ∝ sum). Two versions, different seeds:
+
+| mode | networkx 3.2.1 (seed 7) | networkx 3.7 (seed 8) |
+|---|---|---|
+| uniform | χ² 207.7, p 0.19 | χ² 180.1, p 0.70 |
+| multiplicative | χ² 181.6, p 0.68 | χ² 187.2, p 0.56 |
+| additive | χ² 166.1, p 0.90 | χ² 191.9, p 0.47 |
+
+All six pass (df 191). The additive mode is about 7× slower here (~94 ms per tree against ~13 ms). A pass is
+evidence of correctness on this graph, not a proof.
