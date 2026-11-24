@@ -150,5 +150,5 @@ weights 1/2/3) and additive weights (`multiplicative=False`, P(T) ∝ sum). Two 
 | multiplicative | χ² 181.6, p 0.68 | χ² 187.2, p 0.56 |
 | additive | χ² 166.1, p 0.90 | χ² 191.9, p 0.47 |
 
-All six pass (df 191). The additive mode is about 7× slower here (~94 ms per tree against ~13 ms). A pass is
+All six pass (df 191). The additive mode is about 5× slower here (1,819 s against 348 s for 19,200 trees). A pass is
 evidence of correctness on this graph, not a proof.
