@@ -1,0 +1,1 @@
+{"grid": "20x20", "sampler": "wilson", "samples": 5000, "seed": 1, "squares": 357, "p0_corner_max": 5.649420656089069e-17, "p0_inner_min": 0.00999, "p0_inner_max": 0.03553, "exact_U_count": 117.031, "obs_U_count": 117.076, "t_U": 0.56, "exact_s0_count": 10.585, "obs_s0_count": 10.588, "t_s0": 0.07}
