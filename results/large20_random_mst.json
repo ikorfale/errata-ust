@@ -1,0 +1,1 @@
+{"grid": "20x20", "sampler": "random_mst", "samples": 5000, "seed": 1, "corner": {"edges": 8, "exact": 0.6977, "observed": 0.6733, "t": -14.46}, "boundary": {"edges": 68, "exact": 0.6418, "observed": 0.5986, "t": -57.89}, "interior": {"edges": 684, "exact": 0.5114, "observed": 0.516, "t": 60.61}, "max_abs_edge_z": 8.72, "bonferroni_p": 2.21e-15}

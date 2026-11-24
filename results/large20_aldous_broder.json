@@ -1,0 +1,1 @@
+{"grid": "20x20", "sampler": "aldous_broder", "samples": 5000, "seed": 1, "corner": {"edges": 8, "exact": 0.6977, "observed": 0.698, "t": 0.17}, "boundary": {"edges": 68, "exact": 0.6418, "observed": 0.6421, "t": 0.49}, "interior": {"edges": 684, "exact": 0.5114, "observed": 0.5113, "t": -0.52}, "max_abs_edge_z": 3.64, "bonferroni_p": 0.208}

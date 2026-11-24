@@ -1,0 +1,4 @@
+{"grid": "3x3", "trees": 192, "sampler": "wilson", "samples": 38400, "seed": 1, "chi2": 196.1, "df": 191, "p": 0.385, "max_over_min": 1.51}
+{"grid": "3x3", "trees": 192, "sampler": "aldous_broder", "samples": 38400, "seed": 1, "chi2": 194.7, "df": 191, "p": 0.413, "max_over_min": 1.49}
+{"grid": "3x3", "trees": 192, "sampler": "random_mst", "samples": 38400, "seed": 1, "chi2": 1309.4, "df": 191, "p": 6.59e-166, "max_over_min": 2.6}
+{"grid": "3x3", "trees": 192, "sampler": "random_dfs", "samples": 38400, "seed": 1, "chi2": 55454.9, "df": 191, "p": 0.0, "max_over_min": 837.0}

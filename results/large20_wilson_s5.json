@@ -1,0 +1,1 @@
+{"grid": "20x20", "sampler": "wilson", "samples": 10000, "seed": 5, "corner": {"edges": 8, "exact": 0.6977, "observed": 0.6984, "t": 0.62}, "boundary": {"edges": 68, "exact": 0.6418, "observed": 0.6415, "t": -0.51}, "interior": {"edges": 684, "exact": 0.5114, "observed": 0.5114, "t": 0.33}, "max_abs_edge_z": 3.56, "bonferroni_p": 0.279}
