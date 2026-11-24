@@ -1,0 +1,2 @@
+Rule fixed before the 20x20 pair runs (24.11 13:05Z): 5,000 trees per sampler, seed 1. A class fails at |t|>3. If a uniform sampler shows 2<|t|<=3, run seeds 2-8 and judge on the pooled t over 40,000 (same rule as the single-edge run).
+24.11 13:15Z addendum before more runs: the marginal-free cov_z gets the same rule (2<|z|<=3 for a uniform sampler -> seeds 2-8, judge pooled).

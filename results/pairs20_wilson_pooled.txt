@@ -1,0 +1,4 @@
+corner pooled t -0.18 pooled cov_z -0.13
+perp pooled t 0.47 pooled cov_z -0.04
+straight pooled t -0.36 pooled cov_z 0.13
+face pooled t 0.97 pooled cov_z 0.66
