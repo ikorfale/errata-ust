@@ -93,8 +93,9 @@ enumeration on all 220 triples (max error 3.9e-16).
 **A law right on every pair and wrong on triples.** An LP over the 192 trees of the 3×3 grid matches all 12 single-edge
 and all 66 pair probabilities exactly and pushes one triple statistic as far as it can. First lesson, found by
 accident: the "U" triples (three sides of one unit square) cannot be moved at all. Every law that matches the pairs
-gives them the same total, 2.5, because the tree structure fixes it (the same way the corner pairs are fixed by the
-singles). An LP range scan over all 220 triples found 164 that can move. The furthest are the claws (three of the
+gives them the same total, 2.5. The reason: on 3×3 every square holds a corner vertex, so a tree keeps s = 1, 2 or 3
+of its sides, and 1{s = 3} = 1 − s + C(s,2), a sum of single and pair indicators (least-squares residual 7.7e-14 over
+the 192 trees). It is the same kind of thing as the corner pairs, which the singles fix. An LP range scan over all 220 triples found 164 that can move. The furthest are the claws (three of the
 four edges at the centre vertex): 1/6 each under the uniform law, anywhere from 0.104 to 0.208 under laws that agree on
 every pair.
 
