@@ -1,0 +1,10 @@
+v3 {'graph': '1x1', 'V': 5, 'E': 8, 'T': 40, 'm': 37, 'cuts': 1, 'side_rows': 2, 'cut_rung_rows': 1, 'two_terminal_rows': 0, 'K_violations': 0, 'rank_lower': [26, 26], 'upper_old_family': 27, 'upper_new_family': 26, 'exact': True}
+NO_RUNG {'graph': '1x1', 'V': 5, 'E': 8, 'T': 40, 'm': 37, 'cuts': 1, 'side_rows': 2, 'cut_rung_rows': 0, 'two_terminal_rows': 0, 'K_violations': 0, 'rank_lower': [26, 26], 'upper_old_family': 27, 'upper_new_family': 27, 'exact': False}
+n T(L_n) T(L_n+1)-3T(L_n)
+2 4 3
+3 15 11
+4 56 41
+5 209 153
+6 780 571
+7 2911 2131
+8 10864 7953
