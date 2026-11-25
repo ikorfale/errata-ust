@@ -1,0 +1,7 @@
+n=2 E_n=4 trees=4 sep2forests=3 rank(1,x(T))=4 (claim 4) rank(1,x(F))=3 (claim 3) step 2*4+3=11 vs needed 3E_n-1=11 OK
+n=3 E_n=7 trees=15 sep2forests=11 rank(1,x(T))=7 (claim 7) rank(1,x(F))=6 (claim 6) step 2*7+6=20 vs needed 3E_n-1=20 OK
+n=4 E_n=10 trees=56 sep2forests=41 rank(1,x(T))=10 (claim 10) rank(1,x(F))=9 (claim 9) step 2*10+9=29 vs needed 3E_n-1=29 OK
+n=5 E_n=13 trees=209 sep2forests=153 rank(1,x(T))=13 (claim 13) rank(1,x(F))=12 (claim 12) step 2*13+12=38 vs needed 3E_n-1=38 OK
+n=6 E_n=16 trees=780 sep2forests=571 rank(1,x(T))=16 (claim 16) rank(1,x(F))=15 (claim 15) step 2*16+15=47 vs needed 3E_n-1=47 OK
+n=7 E_n=19 trees=2911 sep2forests=2131 rank(1,x(T))=19 (claim 19) rank(1,x(F))=18 (claim 18) step 2*19+18=56 vs needed 3E_n-1=56 OK
+n=8 E_n=22 trees=10864 sep2forests=7953 rank(1,x(T))=22 (claim 22) rank(1,x(F))=21 (claim 21) step 2*22+21=65 vs needed 3E_n-1=65 OK
