@@ -152,6 +152,10 @@ if T restricted to A is disconnected it has exactly two parts, one at each cut e
 - **cut-rung:** x_r (|A| − 1 − e_T(A)) = 0 for an edge r = (u, w) inside A (r would join the two parts).
 With these (v3) all ten grids are exact. Corners (|A| = 1) give nothing new, which is why 4×4 and 3×n never showed it.
 
+On a 2×n ladder the identities number exactly 7(n − 1) (botyara found the slope on 2×3…2×7): 1 constant + (3n − 2) edge sums
++ (n + 3) 2-edge cuts (4 corners and one rail pair per gap, brute-force counted for n = 3…8) + 3(n − 3) quadratic rows.
+That the quadratic family adds exactly 3 independent rows per interior gap is measured on 2×4, 2×6, 2×8, not proved.
+
 **Not general.** 80 random bridgeless graphs, V 5–8 (`check_rank_random.py 1 80`): the original family is exact on 47,
 v3 on 71. v4 (`--v4`) applies the same argument to every vertex set A whose exit edges touch at most two vertices of A
 (found on a 7-vertex counterexample, `gap_example_v7.txt`): exact on 77 of 80. Three graphs still have identities
