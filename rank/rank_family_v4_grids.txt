@@ -1,0 +1,4 @@
+{"graph": "2x4", "V": 8, "E": 10, "T": 56, "m": 56, "cuts": 7, "side_rows": 20, "cut_rung_rows": 6, "two_terminal_rows": 46, "K_violations": 0, "rank_lower": [35, 35], "upper_old_family": 38, "upper_new_family": 35, "exact": true}
+{"graph": "2x6", "V": 12, "E": 16, "T": 780, "m": 137, "cuts": 9, "side_rows": 28, "cut_rung_rows": 10, "two_terminal_rows": 72, "K_violations": 0, "rank_lower": [102, 102], "upper_old_family": 111, "upper_new_family": 102, "exact": true}
+{"graph": "3x3", "V": 9, "E": 12, "T": 192, "m": 79, "cuts": 4, "side_rows": 8, "cut_rung_rows": 0, "two_terminal_rows": 28, "K_violations": 0, "rank_lower": [62, 62], "upper_old_family": 62, "upper_new_family": 62, "exact": true}
+{"graph": "3x4", "V": 12, "E": 17, "T": 2415, "m": 154, "cuts": 4, "side_rows": 8, "cut_rung_rows": 0, "two_terminal_rows": 33, "K_violations": 0, "rank_lower": [132, 132], "upper_old_family": 132, "upper_new_family": 132, "exact": true}

@@ -1,0 +1,10 @@
+{"graph": "2x2", "V": 4, "E": 4, "T": 4, "m": 11, "cuts": 6, "side_rows": 16, "cut_rung_rows": 4, "K_violations": 0, "rank_lower": [4, 4], "upper_old_family": 4, "upper_new_family": 4, "exact": true}
+{"graph": "2x3", "V": 6, "E": 7, "T": 15, "m": 29, "cuts": 6, "side_rows": 16, "cut_rung_rows": 4, "K_violations": 0, "rank_lower": [15, 15], "upper_old_family": 15, "upper_new_family": 15, "exact": true}
+{"graph": "3x3", "V": 9, "E": 12, "T": 192, "m": 79, "cuts": 4, "side_rows": 8, "cut_rung_rows": 0, "K_violations": 0, "rank_lower": [62, 62], "upper_old_family": 62, "upper_new_family": 62, "exact": true}
+{"graph": "2x4", "V": 8, "E": 10, "T": 56, "m": 56, "cuts": 7, "side_rows": 20, "cut_rung_rows": 6, "K_violations": 0, "rank_lower": [35, 35], "upper_old_family": 38, "upper_new_family": 35, "exact": true}
+{"graph": "2x5", "V": 10, "E": 13, "T": 209, "m": 92, "cuts": 8, "side_rows": 24, "cut_rung_rows": 8, "K_violations": 0, "rank_lower": [64, 64], "upper_old_family": 70, "upper_new_family": 64, "exact": true}
+{"graph": "2x6", "V": 12, "E": 16, "T": 780, "m": 137, "cuts": 9, "side_rows": 28, "cut_rung_rows": 10, "K_violations": 0, "rank_lower": [102, 102], "upper_old_family": 111, "upper_new_family": 102, "exact": true}
+{"graph": "2x7", "V": 14, "E": 19, "T": 2911, "m": 191, "cuts": 10, "side_rows": 32, "cut_rung_rows": 12, "K_violations": 0, "rank_lower": [149, 149], "upper_old_family": 161, "upper_new_family": 149, "exact": true}
+{"graph": "3x4", "V": 12, "E": 17, "T": 2415, "m": 154, "cuts": 4, "side_rows": 8, "cut_rung_rows": 0, "K_violations": 0, "rank_lower": [132, 132], "upper_old_family": 132, "upper_new_family": 132, "exact": true}
+{"graph": "2x8", "V": 16, "E": 22, "T": 10864, "m": 254, "cuts": 11, "side_rows": 36, "cut_rung_rows": 14, "K_violations": 0, "rank_lower": [205, 205], "upper_old_family": 220, "upper_new_family": 205, "exact": true}
+{"graph": "3x5", "V": 15, "E": 22, "T": 30305, "m": 254, "cuts": 4, "side_rows": 8, "cut_rung_rows": 0, "K_violations": 0, "rank_lower": [227, 227], "upper_old_family": 227, "upper_new_family": 227, "exact": true}

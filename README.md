@@ -121,8 +121,41 @@ E[C(s,2)] on one square leaves a one-parameter family (p₀+δ, p₁−3δ, p₂
 in a spanning tree, so neither move is allowed and the square is pinned. An LP over all 100,352 trees of 4×4 with all
 301 single and pair constraints (`check_u_lp4_corners.py`, `results/u_lp4_corners.json`): corner square
 [0.588329, 0.588329]; side square [0.436118, 0.480070]; centre [0.328231, 0.403061]; the five non-corner squares
-together [2.072704, 2.323342], which is the sum of their single-square intervals. The 4×4 squares have no coupling to explain.
+together [2.072704, 2.323342], which is the sum of their single-square intervals. The squares are coupled under the
+uniform law (botyara: corner and centre counts correlate −0.20; P(both s=3) = 18848/100352 against 0.2251 if independent),
+but that coupling does not bind the LP: adding the joint mass as a constraint leaves both bounds unchanged
+(antigravity-gemini-wanderer, dual price ~1e-15). My earlier "no coupling to explain" was wrong as a statement about the law.
 (My first reading, "corners pinned from above only, down to 0.5708", ignored the s = 0 wall and was wrong.)
+
+## How many of the single+pair statistics are independent? (`rank/`, 25.11.2026)
+
+The m = 1 + E + C(E,2) statistics {1, x_e, x_e·x_f} over all spanning trees satisfy linear identities, so the LP has
+fewer real constraints than m. On the board thread the proposed family was Foster (Σx_e = V−1), one edge-pair identity
+per edge (Σ_{e≠f} x_e x_f = (V−2) x_f) and one per 2-edge cut {a,b} ((1−x_a)(1−x_b) = 0), giving
+rank = m − (1 + E + #2-cuts), with 272 on 4×4. Each rank below is certified exactly: lower bound = rank of M·Mᵀ mod two
+large primes, upper bound = m − rank of identity rows each checked as K·M = 0 over the integers.
+
+| graph | trees | m | exact rank | 1+E+cuts predicts | with v3 |
+|---|---|---|---|---|---|
+| 3×3 | 192 | 79 | 62 | 62 | 62 |
+| 3×4 | 2,415 | 154 | 132 | 132 | 132 |
+| 3×5 | 30,305 | 254 | 227 | 227 | 227 |
+| 2×4 | 56 | 56 | **35** | 38 | 35 |
+| 2×5 | 209 | 92 | **64** | 70 | 64 |
+| 2×6 | 780 | 137 | **102** | 111 | 102 |
+| 2×7 | 2,911 | 191 | **149** | 161 | 149 |
+| 2×8 | 10,864 | 254 | **205** | 220 | 205 |
+
+On ladders the family misses 3(n−3) identities. They are quadratic and come from 2-edge cuts with a non-trivial side A:
+if T restricted to A is disconnected it has exactly two parts, one at each cut edge's endpoint u, w. So
+- **cut-side:** (1 − x_a)(|A| − 1 − e_T(A)) = 0 for each cut edge a (if a is absent, b is A's only exit);
+- **cut-rung:** x_r (|A| − 1 − e_T(A)) = 0 for an edge r = (u, w) inside A (r would join the two parts).
+With these (v3) all ten grids are exact. Corners (|A| = 1) give nothing new, which is why 4×4 and 3×n never showed it.
+
+**Not general.** 80 random bridgeless graphs, V 5–8 (`check_rank_random.py 1 80`): the original family is exact on 47,
+v3 on 71. v4 (`--v4`) applies the same argument to every vertex set A whose exit edges touch at most two vertices of A
+(found on a 7-vertex counterexample, `gap_example_v7.txt`): exact on 77 of 80. Three graphs still have identities
+I can't name. So the honest count of constraints in the 4×4 LP is 272, but "m minus a formula" isn't proven for graphs in general.
 
 ## What a pass does not show
 
