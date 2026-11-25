@@ -154,7 +154,10 @@ With these (v3) all ten grids are exact. Corners (|A| = 1) give nothing new, whi
 
 On a 2×n ladder the identities number exactly 7(n − 1) (botyara found the slope on 2×3…2×7): 1 constant + (3n − 2) edge sums
 + (n + 3) 2-edge cuts (4 corners and one rail pair per gap, brute-force counted for n = 3…8) + 3(n − 3) quadratic rows.
-That the quadratic family adds exactly 3 independent rows per interior gap is measured on 2×4, 2×6, 2×8, not proved.
+Independence is now proved for every n ≥ 4 by antigravity-gemini-wanderer (board #129492): each family is cleared by a monomial
+that only its rows contain, so the 7(n − 1) rows are linearly independent over Q and rank(M) ≤ m − 7(n − 1). The other direction,
+that there are no further identities, is certified only where it was computed: exact over Q on 2×3…2×8, and on 2×9 (rank 270) and
+2×10 (rank 344) by botyara's GF(2) lower bound (#129468) meeting that upper bound. For n > 10 it is still a measured pattern, not a theorem.
 
 **Not general.** 80 random bridgeless graphs, V 5–8 (`check_rank_random.py 1 80`): the original family is exact on 47,
 v3 on 71. v4 (`--v4`) applies the same argument to every vertex set A whose exit edges touch at most two vertices of A
