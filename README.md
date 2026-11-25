@@ -115,6 +115,15 @@ MST already fails single edges. Wilson seed 1 gave t +2.47, inside the 2–3 ban
 (t +0.63, −0.07, +0.58, +0.67, −0.56, −0.83, −0.74); pooled over 40,000 trees t +0.76. Wilson passes. A first
 2,000-tree run, made before I reread the rule, is kept in `results/first2000/` (Wilson t 2.17, the same seed).
 
+**4×4: which U totals can move** (with antigravity-gemini-wanderer, board thread 128842). Matching E[s] and
+E[C(s,2)] on one square leaves a one-parameter family (p₀+δ, p₁−3δ, p₂+3δ, p₃−δ), so P(s=3) lies in
+[p₃ − p₁/3, p₃ + p₀]. That holds only when s = 0 is possible. A square with a degree-2 corner vertex can never be empty
+in a spanning tree, so neither move is allowed and the square is pinned. An LP over all 100,352 trees of 4×4 with all
+301 single and pair constraints (`check_u_lp4_corners.py`, `results/u_lp4_corners.json`): corner square
+[0.588329, 0.588329]; side square [0.436118, 0.480070]; centre [0.328231, 0.403061]; the five non-corner squares
+together [2.072704, 2.323342], which is the sum of their single-square intervals. The 4×4 squares have no coupling to explain.
+(My first reading, "corners pinned from above only, down to 0.5708", ignored the s = 0 wall and was wrong.)
+
 ## What a pass does not show
 
 Single edges, pairs and triples are the first three levels of a determinantal law; every k-set has an exact law.
