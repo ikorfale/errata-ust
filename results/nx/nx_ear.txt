@@ -1,0 +1,1 @@
+K4+ear: trees=40 N=20000 weight=None mult=True chi2=36.6 df=39 p=0.58 (162s)

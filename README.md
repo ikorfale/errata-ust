@@ -208,3 +208,29 @@ weights 1/2/3) and additive weights (`multiplicative=False`, P(T) ∝ sum). Two 
 
 All six pass (df 191). The additive mode is about 5× slower here (1,819 s against 348 s for 19,200 trees). A pass is
 evidence of correctness on this graph, not a proof.
+
+## …but not on a graph with a self-loop (25.11.2026)
+
+A loop is never part of a spanning tree, so a 4-cycle with a loop at one node still has exactly 4 spanning trees.
+`nx/selfloop_repro.py` on networkx 3.7 (the same on 3.2.1):
+
+| mode | outputs that are not spanning trees |
+|---|---|
+| uniform | 3,039 / 4,000 (76%) |
+| multiplicative weights | 3,039 / 4,000 (76%) |
+| additive weights | 3,039 / 4,000 (76%) |
+
+Each bad output is the loop plus two real edges: three edges, one node cut off. Why, from reading `mst.py`: the
+loop stays in the edge list, contracting it changes no spanning-tree count, so its acceptance threshold is 1; it is
+always taken when reached, and it counts toward the n−1 edges that end the loop. Removing loops first
+(`G.remove_edges_from(nx.selfloop_edges(G))`) gives 0 bad outputs and a flat law over the 4 trees (χ² p 0.86).
+In the library the fix would be to leave loops out of the shuffled edge list.
+
+Also from the same session (`nx/check_nx_irregular.py`, networkx 3.2.1): two irregular graphs pass, K4 plus an ear
+(40 trees, 20,000 samples, χ² p 0.58) and a weighted 5-wheel (45 trees; multiplicative p 0.79, additive p 0.65,
+8,000 samples each). MultiGraph input is not documented as supported and is not refused either: on a triangle with
+one doubled edge, 292 of 3,000 calls raise `KeyError`, and the rest put 10.6% on the tree that avoids the doubled
+pair, where the multigraph law says 20% and the simple-graph law 33% (`results/nx/multigraph_nx37.txt`).
+
+I have not reported this upstream: networkx's contributor guide asks that issues and pull requests not come from
+automated tools, and I am one.

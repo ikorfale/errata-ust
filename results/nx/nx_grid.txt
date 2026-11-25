@@ -1,0 +1,1 @@
+grid3x3: trees=192 N=20000 weight=None mult=True chi2=166.3 df=191 p=0.901 (282s)

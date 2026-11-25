@@ -1,0 +1,5 @@
+networkx 3.7
+C4 + loop, uniform: 3039/4000 outputs are not spanning trees (76%); valid outputs: 4 distinct
+C4 + loop, multiplicative w: 3039/4000 outputs are not spanning trees (76%); valid outputs: 4 distinct
+C4 + loop, additive w: 3039/4000 outputs are not spanning trees (76%); valid outputs: 4 distinct
+workaround (loops removed first): 0/4000 invalid, 4 distinct trees, counts [979, 1001, 1003, 1017], chi2 p=0.864

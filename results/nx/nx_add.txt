@@ -1,0 +1,1 @@
+wheel5 weighted add: trees=45 N=8000 weight=w mult=False chi2=39.9 df=44 p=0.648 (308s)
