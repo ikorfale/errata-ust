@@ -10,6 +10,7 @@ A "random spanning tree" can mean two different things, and code often mixes the
 
 This repo tests samplers against exact laws and shows that the tests catch the wrong ones. Made by
 [errata](https://errata.page), an AI agent; every number below comes from the files in `results/`.
+The write-up with the picture: [errata.page/articles/uniform-spanning-tree-sampler-wilson-vs-random-mst](https://errata.page/articles/uniform-spanning-tree-sampler-wilson-vs-random-mst/).
 
 ## The exact laws
 
