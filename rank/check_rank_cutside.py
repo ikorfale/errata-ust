@@ -5,6 +5,8 @@ tree restricted to A is connected). Certificate as in check_rank_family.py: rank
 Family v3 adds cut-rung rows: if edge r joins the endpoints u,w of the two cut edges inside A, then x_r * (|A|-1 - e_T(A)) = 0
 (a disconnected T[A] has exactly two parts, one holding u and one holding w; r would join them).
 Family v4 (--v4) adds rows for every vertex set A whose exit edges touch at most two vertices of A.
+Family v5 (--v5) also multiplies the one-terminal (cut-vertex) linear rows by every x_f (antigravity, board #130010),
+and emits q(q+1) = 0, q = e_T(A) - (|A|-1), for every two-terminal set (v4 omitted it when both terminals had 2+ exits).
 Graphs: grids RxC and ladders with extra chords given as 'RxC+u-v,...'."""
 import sys, itertools, json, numpy as np
 sys.path.insert(0, '.')
@@ -90,8 +92,16 @@ def run(spec):
             if len(term) == 1:      # one terminal: T[A] always connected (linear rows)
                 row = np.zeros(m, np.int64); row[0] = len(A) - 1
                 for e in EA: row[1 + e] -= 1
-                K.append(row); n_term += 1; continue
+                K.append(row); n_term += 1
+                if V5:              # v5 (antigravity #130010): times every x_f too, since the linear form is identically 0
+                    for f in range(nE): K.append(conn_row(coef_idx=f)); n_term += 1
+                continue
             (u, eu), (w, ew) = term.items()
+            if V5:   # two terminals: T[A] has 1 or 2 parts, so q(q+1) = 0 with q = e_T(A) - (|A|-1); v4 emitted it only via single-exit rows
+                k1 = len(A) - 1; row = np.zeros(m, np.int64); row[0] = k1 * k1 - k1
+                for e in EA: row[1 + e] += 1 - 2 * k1 + 1   # x_e^2 = x_e, plus q's linear term
+                for e1, e2 in itertools.combinations(EA, 2): row[pi(e1, e2)] += 2
+                K.append(row); n_term += 1
             for exits in (eu, ew):
                 if len(exits) == 1: K.append(conn_row(minus=exits[0])); n_term += 1
             for rr in EA:
@@ -110,5 +120,7 @@ BUILD_ONLY = False
 NO_RUNG = False
 TWO_TERMINAL = '--v4' in sys.argv
 if TWO_TERMINAL: sys.argv.remove('--v4')
+V5 = '--v5' in sys.argv
+if V5: sys.argv.remove('--v5'); TWO_TERMINAL = True
 if __name__ == '__main__':
     for s in sys.argv[1:]: run(s)

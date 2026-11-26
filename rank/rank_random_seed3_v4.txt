@@ -1,0 +1,81 @@
+ok 6 10 104 56 41 cuts 1 rung 1 old_exact False
+ok 5 7 24 29 20 cuts 1 rung 0 old_exact True
+GAP 8 [(0, 1), (0, 2), (0, 4), (0, 5), (0, 7), (1, 3), (1, 4), (1, 7), (2, 7), (3, 7), (5, 6), (6, 7)] {'graph': '1x1', 'V': 8, 'E': 12, 'T': 186, 'm': 79, 'cuts': 6, 'side_rows': 14, 'cut_rung_rows': 5, 'two_terminal_rows': 46, 'K_violations': 0, 'rank_lower': [55, 55], 'upper_old_family': 60, 'upper_new_family': 56, 'exact': False}
+ok 7 10 91 56 41 cuts 3 rung 1 old_exact False
+ok 5 7 24 29 20 cuts 1 rung 0 old_exact True
+ok 5 10 125 56 45 cuts 0 rung 0 old_exact True
+ok 6 11 209 67 55 cuts 0 rung 0 old_exact True
+ok 5 10 125 56 45 cuts 0 rung 0 old_exact True
+ok 6 11 209 67 55 cuts 0 rung 0 old_exact True
+ok 8 12 265 79 62 cuts 3 rung 2 old_exact False
+ok 8 13 401 92 71 cuts 3 rung 3 old_exact False
+ok 6 10 111 56 43 cuts 1 rung 1 old_exact False
+ok 5 9 75 46 36 cuts 0 rung 0 old_exact True
+ok 7 8 19 37 19 cuts 9 rung 5 old_exact True
+ok 8 13 481 92 74 cuts 2 rung 2 old_exact False
+ok 7 10 94 56 41 cuts 2 rung 1 old_exact False
+ok 5 6 12 22 12 cuts 3 rung 0 old_exact True
+ok 5 7 24 29 20 cuts 1 rung 0 old_exact True
+GAP 7 [(0, 2), (0, 4), (1, 3), (1, 5), (2, 3), (2, 4), (2, 6), (3, 4), (3, 5), (3, 6)] {'graph': '1x1', 'V': 7, 'E': 10, 'T': 63, 'm': 56, 'cuts': 5, 'side_rows': 12, 'cut_rung_rows': 5, 'two_terminal_rows': 43, 'K_violations': 0, 'rank_lower': [31, 31], 'upper_old_family': 40, 'upper_new_family': 33, 'exact': False}
+ok 5 8 40 37 26 cuts 1 rung 1 old_exact False
+ok 5 7 21 29 17 cuts 2 rung 2 old_exact False
+ok 5 10 125 56 45 cuts 0 rung 0 old_exact True
+ok 5 8 40 37 26 cuts 1 rung 1 old_exact False
+ok 5 8 45 37 28 cuts 0 rung 0 old_exact True
+ok 7 12 272 79 62 cuts 2 rung 2 old_exact False
+ok 6 9 61 46 33 cuts 2 rung 1 old_exact False
+ok 7 12 321 79 64 cuts 1 rung 1 old_exact False
+ok 6 10 114 56 43 cuts 1 rung 1 old_exact False
+ok 6 11 216 67 55 cuts 0 rung 0 old_exact True
+ok 5 7 21 29 17 cuts 2 rung 2 old_exact False
+ok 5 9 75 46 36 cuts 0 rung 0 old_exact True
+ok 5 10 125 56 45 cuts 0 rung 0 old_exact True
+ok 6 9 56 46 32 cuts 3 rung 2 old_exact False
+ok 6 8 32 37 23 cuts 3 rung 1 old_exact False
+GAP 8 [(0, 2), (0, 3), (0, 6), (0, 7), (1, 2), (1, 4), (1, 5), (2, 4), (3, 4), (4, 5), (4, 6), (5, 7)] {'graph': '1x1', 'V': 8, 'E': 12, 'T': 264, 'm': 79, 'cuts': 3, 'side_rows': 6, 'cut_rung_rows': 0, 'two_terminal_rows': 24, 'K_violations': 0, 'rank_lower': [62, 62], 'upper_old_family': 63, 'upper_new_family': 63, 'exact': False}
+ok 5 6 11 22 11 cuts 4 rung 3 old_exact True
+ok 6 10 121 56 45 cuts 0 rung 0 old_exact True
+ok 7 10 76 56 37 cuts 4 rung 3 old_exact False
+ok 5 8 40 37 26 cuts 1 rung 1 old_exact False
+ok 6 9 61 46 33 cuts 2 rung 1 old_exact False
+ok 7 11 144 67 47 cuts 2 rung 2 old_exact False
+ok 5 9 75 46 36 cuts 0 rung 0 old_exact True
+ok 7 9 32 46 23 cuts 8 rung 6 old_exact False
+ok 6 10 111 56 43 cuts 1 rung 1 old_exact False
+ok 5 10 125 56 45 cuts 0 rung 0 old_exact True
+ok 8 13 578 92 77 cuts 1 rung 0 old_exact True
+ok 5 8 40 37 26 cuts 1 rung 1 old_exact False
+ok 5 8 40 37 26 cuts 1 rung 1 old_exact False
+ok 6 8 32 37 25 cuts 3 rung 1 old_exact True
+ok 7 11 191 67 54 cuts 1 rung 0 old_exact True
+ok 8 13 544 92 76 cuts 2 rung 0 old_exact True
+ok 5 8 45 37 28 cuts 0 rung 0 old_exact True
+ok 6 10 114 56 43 cuts 1 rung 1 old_exact False
+GAP 8 [(0, 1), (0, 3), (0, 4), (0, 7), (1, 3), (1, 7), (2, 3), (2, 5), (2, 6), (4, 5), (4, 6), (4, 7)] {'graph': '1x1', 'V': 8, 'E': 12, 'T': 264, 'm': 79, 'cuts': 2, 'side_rows': 4, 'cut_rung_rows': 0, 'two_terminal_rows': 22, 'K_violations': 0, 'rank_lower': [62, 62], 'upper_old_family': 64, 'upper_new_family': 63, 'exact': False}
+ok 7 9 33 46 23 cuts 7 rung 6 old_exact False
+ok 7 12 297 79 64 cuts 1 rung 1 old_exact False
+ok 5 9 75 46 36 cuts 0 rung 0 old_exact True
+ok 5 6 11 22 11 cuts 4 rung 3 old_exact True
+ok 7 12 336 79 65 cuts 1 rung 0 old_exact True
+ok 5 10 125 56 45 cuts 0 rung 0 old_exact True
+ok 8 12 198 79 55 cuts 4 rung 3 old_exact False
+GAP 8 [(0, 3), (0, 5), (1, 3), (1, 5), (2, 3), (2, 4), (2, 7), (3, 4), (3, 7), (4, 5), (4, 7), (5, 6), (6, 7)] {'graph': '1x1', 'V': 8, 'E': 13, 'T': 460, 'm': 92, 'cuts': 3, 'side_rows': 6, 'cut_rung_rows': 0, 'two_terminal_rows': 25, 'K_violations': 0, 'rank_lower': [74, 74], 'upper_old_family': 75, 'upper_new_family': 75, 'exact': False}
+ok 8 13 511 92 76 cuts 2 rung 0 old_exact True
+ok 5 9 75 46 36 cuts 0 rung 0 old_exact True
+ok 6 9 60 46 33 cuts 2 rung 1 old_exact False
+ok 5 8 40 37 26 cuts 1 rung 1 old_exact False
+ok 8 13 425 92 71 cuts 2 rung 2 old_exact False
+ok 7 11 183 67 52 cuts 1 rung 1 old_exact False
+ok 5 8 40 37 26 cuts 1 rung 1 old_exact False
+ok 6 11 225 67 55 cuts 0 rung 0 old_exact True
+ok 6 8 29 37 22 cuts 4 rung 3 old_exact False
+ok 6 10 104 56 41 cuts 1 rung 1 old_exact False
+ok 6 10 99 56 41 cuts 2 rung 2 old_exact False
+GAP 7 [(0, 1), (0, 3), (0, 4), (0, 5), (0, 6), (1, 2), (1, 6), (2, 3), (2, 5), (2, 6), (4, 6)] {'graph': '1x1', 'V': 7, 'E': 11, 'T': 160, 'm': 67, 'cuts': 3, 'side_rows': 6, 'cut_rung_rows': 1, 'two_terminal_rows': 25, 'K_violations': 0, 'rank_lower': [50, 50], 'upper_old_family': 52, 'upper_new_family': 51, 'exact': False}
+ok 5 7 24 29 20 cuts 1 rung 0 old_exact True
+ok 5 6 11 22 11 cuts 4 rung 3 old_exact True
+ok 7 10 79 56 37 cuts 3 rung 2 old_exact False
+ok 5 7 24 29 20 cuts 1 rung 0 old_exact True
+ok 5 8 40 37 26 cuts 1 rung 1 old_exact False
+ok 7 9 39 46 27 cuts 5 rung 3 old_exact False
+summary 80 graphs, 6 with a gap

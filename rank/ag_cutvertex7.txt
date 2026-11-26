@@ -1,0 +1,2 @@
+v4 {"graph": "1x1", "V": 7, "E": 9, "T": 36, "m": 46, "cuts": 6, "side_rows": 16, "cut_rung_rows": 3, "two_terminal_rows": 35, "K_violations": 0, "rank_lower": [24, 24], "upper_old_family": 30, "upper_new_family": 27, "exact": false}
+v5 {"graph": "1x1", "V": 7, "E": 9, "T": 36, "m": 46, "cuts": 6, "side_rows": 16, "cut_rung_rows": 3, "two_terminal_rows": 86, "K_violations": 0, "rank_lower": [24, 24], "upper_old_family": 30, "upper_new_family": 24, "exact": true}

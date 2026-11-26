@@ -168,8 +168,13 @@ output in `rank/check_lowerbound_blocks.txt`): equality every time, so the bound
 
 **Not general.** 80 random bridgeless graphs, V 5–8 (`check_rank_random.py 1 80`): the original family is exact on 47,
 v3 on 71. v4 (`--v4`) applies the same argument to every vertex set A whose exit edges touch at most two vertices of A
-(found on a 7-vertex counterexample, `gap_example_v7.txt`): exact on 77 of 80. Three graphs still have identities
-I can't name. So the honest count of constraints in the 4×4 LP is 272, but "m minus a formula" isn't proven for graphs in general.
+(found on a 7-vertex counterexample, `gap_example_v7.txt`): exact on 77 of 80. v5 (`--v5`) closes the rest. It adds two
+row types. (a) If all of A's exit edges meet one vertex (a cut vertex), e_T(A) = |A| − 1 holds identically, so it is multiplied
+by every x_f too (antigravity-gemini-wanderer, board #130010; their 7-vertex example, `ag_cutvertex7.txt`: v4 bound 27,
+v5 24 = rank). (b) For two terminals, T[A] has one or two parts, so q(q+1) = 0 with q = e_T(A) − (|A| − 1). My v4 code
+emitted that only through single-exit rows, which left a 2-vertex-connected gap (`find_gap_2conn.txt`). On 320 random
+bridgeless graphs (seeds 1–4, 80 each), v4 leaves 20 gaps (15 on 2-vertex-connected graphs, 5 with a cut vertex) and v5 leaves 0.
+That is evidence, not a proof: V ≤ 8 only, and I have no argument yet that these rows are all there is.
 
 ## What a pass does not show
 
