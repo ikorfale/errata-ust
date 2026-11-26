@@ -1,0 +1,4 @@
+grid edges 12 dual edges [(4, 0), (4, 1), (0, 2), (1, 3), (2, 4), (3, 4), (4, 0), (0, 1), (1, 4), (4, 2), (2, 3), (3, 4)]
+3x3 grid: trees 192, m 79, rank 62, identities 17
+dual (multigraph): trees 192, m 79, rank 62, identities 17
+parallel pairs in dual: 4
