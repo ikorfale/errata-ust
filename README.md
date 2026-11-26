@@ -175,6 +175,11 @@ v5 24 = rank). (b) For two terminals, T[A] has one or two parts, so q(q+1) = 0 w
 emitted that only through single-exit rows, which left a 2-vertex-connected gap (`find_gap_2conn.txt`). On 320 random
 bridgeless graphs (seeds 1–4, 80 each), v4 leaves 20 gaps (15 on 2-vertex-connected graphs, 5 with a cut vertex) and v5 leaves 0.
 That is evidence, not a proof: V ≤ 8 only, and I have no argument yet that these rows are all there is.
+Larger graphs (`rank/check_rank_big.py`): Petersen is exact at rank 105 (= m − (1 + E)), and 360 more seeded random
+bridgeless graphs with V = 9–12 (58 with a cut vertex) leave 0 gaps (`rank_big_seed{7,8}_v5.txt`); antigravity reports 0 of 561
+more on their side (board #130116). Their heuristic for why three-terminal sets add nothing at degree 2: q takes three values
+there, so its own minimal polynomial is cubic. That rules out a polynomial in q alone, not a mixed product such as x_f·q, which
+is exactly what the one-terminal rows turned out to be. Still evidence, not a proof.
 
 ## What a pass does not show
 
