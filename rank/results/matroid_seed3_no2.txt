@@ -1,0 +1,42 @@
+U(2,4): E=4 r=2 B=6 2sep=8 id_dim=5 sep_rank=5 OK
+U(2,6): E=6 r=2 B=15 2sep=12 id_dim=7 sep_rank=7 OK
+U(3,7): E=7 r=3 B=35 2sep=14 id_dim=8 sep_rank=8 OK
+U(4,8): E=8 r=4 B=70 2sep=16 id_dim=9 sep_rank=9 OK
+F7: E=7 r=3 B=28 2sep=14 id_dim=8 sep_rank=8 OK
+nonFano (GF3): E=7 r=3 B=29 2sep=14 id_dim=8 sep_rank=8 OK
+Vamos: E=8 r=4 B=65 2sep=16 id_dim=9 sep_rank=9 OK
+U(2,4)+U(1,3) direct: E=7 r=3 B=18 2sep=28 id_dim=15 sep_rank=15 OK
+F7 (+)2 U(2,4): E=9 r=4 B=84 2sep=20 id_dim=11 sep_rank=10 GAP
+U(2,5) (+)2 U(1,4) (circuit leaf? no: U(3,4)=C4): E=7 r=4 B=22 2sep=22 id_dim=11 sep_rank=8 GAP
+U(2,5) (+)2 U(1,4) (bond leaf): E=7 r=2 B=18 2sep=22 id_dim=11 sep_rank=8 GAP
+rand0 sp: E=10 r=3 B=109 2sep=20 id_dim=11 sep_rank=11 OK
+rand1 gf: E=8 r=2 B=20 2sep=42 id_dim=17 sep_rank=9 GAP
+rand2 sp: E=9 r=3 B=75 2sep=18 id_dim=10 sep_rank=10 OK
+rand3 sum: E=8 r=3 B=36 2sep=26 id_dim=13 sep_rank=9 GAP
+rand4 sp: E=9 r=5 B=112 2sep=18 id_dim=10 sep_rank=10 OK
+rand5 sum: E=8 r=3 B=32 2sep=24 id_dim=12 sep_rank=9 GAP
+rand6 sp: E=6 r=3 B=16 2sep=12 id_dim=7 sep_rank=7 OK
+rand7 sum: E=8 r=5 B=32 2sep=24 id_dim=12 sep_rank=9 GAP
+rand8 sp: E=8 r=5 B=49 2sep=16 id_dim=9 sep_rank=9 OK
+rand9 sp: E=6 r=4 B=12 2sep=18 id_dim=10 sep_rank=7 GAP
+rand10 sp: E=7 r=2 B=18 2sep=20 id_dim=11 sep_rank=8 GAP
+rand11 sp: E=8 r=4 B=61 2sep=16 id_dim=9 sep_rank=9 OK
+rand12 sum: E=11 r=5 B=224 2sep=24 id_dim=13 sep_rank=12 GAP
+rand13 sum: E=8 r=4 B=48 2sep=18 id_dim=10 sep_rank=9 GAP
+rand14 gf: E=8 r=4 B=56 2sep=16 id_dim=9 sep_rank=9 OK
+rand15 sp: E=9 r=2 B=32 2sep=26 id_dim=14 sep_rank=10 GAP
+rand16 gf: E=5 r=3 B=7 2sep=18 id_dim=9 sep_rank=6 GAP
+rand17 sum: E=10 r=5 B=96 2sep=40 id_dim=21 sep_rank=21 OK
+rand18 sum: E=10 r=4 B=64 2sep=52 id_dim=23 sep_rank=21 GAP
+rand19 sp: E=8 r=2 B=24 2sep=24 id_dim=13 sep_rank=9 GAP
+rand20 sum: E=8 r=3 B=32 2sep=24 id_dim=12 sep_rank=9 GAP
+rand21 sp: E=7 r=2 B=18 2sep=20 id_dim=11 sep_rank=8 GAP
+rand22 sp: E=7 r=4 B=30 2sep=14 id_dim=8 sep_rank=8 OK
+rand23 sp: E=6 r=4 B=12 2sep=18 id_dim=10 sep_rank=7 GAP
+rand24 sp: E=10 r=3 B=108 2sep=20 id_dim=11 sep_rank=11 OK
+rand25 sum: E=13 r=6 B=448 2sep=52 id_dim=27 sep_rank=27 OK
+rand26 sp: E=10 r=3 B=109 2sep=20 id_dim=11 sep_rank=11 OK
+rand27 gf: E=10 r=2 B=39 2sep=34 id_dim=17 sep_rank=11 GAP
+rand28 sum: E=11 r=5 B=252 2sep=26 id_dim=14 sep_rank=12 GAP
+rand29 gf: E=10 r=4 B=140 2sep=20 id_dim=11 sep_rank=11 OK
+gaps: 20
