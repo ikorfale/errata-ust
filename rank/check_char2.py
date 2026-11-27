@@ -3,7 +3,9 @@ Over GF(2) the 2-separation rows q_X(q_X+1) are 0 and Foster loses rank (U(1,3):
 the integral halves h_X = q_X(q_X+1)/2 = e2(X) + (1-r(X)) s(X) + C(r(X),2), s = sum of x over X, e2 = pairs in X.
 Modes: base   = the char-0 generator set reduced mod 2 (expect gaps);
        half2  = base + h_X for 2-separations;
-       halfall= base + h_X for E, every 1-separation and every 2-separation.
+       halfall= base + h_X for E, every 1-separation and every 2-separation;
+       g      = base + only g = h_E (theone #130853: h_{E-f} = g mod Foster for non-coloop f);
+       gsep   = base + g + h_X only for 2-separations with |X|, |E-X| >= 2 (no complement-of-singleton rows).
 Each h_X is checked to vanish on every basis before use. Usage: check_char2.py MODE [seed N] (P=2 fixed)."""
 import itertools, random, sys
 import check_sep_span_matroid as C
@@ -36,10 +38,10 @@ def check(n, rk):
     for X, rX, lam in sets:
         if lam in ('F', 0):
             sep.append(vec(-rX, {e: 1 for e in X}, {})); sep += [q_times(X, rX, f) for f in range(k)]
-            if MODE == 'halfall': sep.append(half(X, rX))
+            if MODE == 'halfall' or (MODE in ('g', 'gsep') and lam == 'F'): sep.append(half(X, rX))
         else:
             sep.append(vec(rX * rX - rX, {e: 2 - 2 * rX for e in X}, {pr: 2 for pr in itertools.combinations(sorted(X), 2)}))
-            if MODE in ('half2', 'halfall'): sep.append(half(X, rX))
+            if MODE in ('half2', 'halfall') or (MODE == 'gsep' and 2 <= len(X) <= k - 2): sep.append(half(X, rX))
     for s in sep:
         assert all((s[0] + sum(s[1 + e] for e in t) + sum(s[1 + k + pi[pr]] for pr in itertools.combinations(t, 2))) % 2 == 0 for t in T), 'row does not vanish'
     return len(T), id_dim, C.rank_mod(sep), sum(1 for x in sets if x[2] == 1)
