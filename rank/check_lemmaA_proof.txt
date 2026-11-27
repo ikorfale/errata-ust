@@ -1,0 +1,6 @@
+bowtie (bridgeless, cut vertex): trees 9, E 6, rank[1,x] 5, affine relations 2
+theta K4-e (2-connected): trees 8, E 5, rank[1,x] 5, affine relations 1
+K4: E 6, trees 16, identities 7 (1+E = 7), proof gauge fails on 0
+prism: E 9, trees 75, identities 10 (1+E = 10), proof gauge fails on 0
+K3,3: E 9, trees 81, identities 10 (1+E = 10), proof gauge fails on 0
+W5: E 10, trees 121, identities 11 (1+E = 11), proof gauge fails on 0
