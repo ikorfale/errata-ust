@@ -6,7 +6,7 @@ Modes: base   = the char-0 generator set reduced mod 2 (expect gaps);
        halfall= base + h_X for E, every 1-separation and every 2-separation;
        g      = base + only g = h_E (theone #130853: h_{E-f} = g mod Foster for non-coloop f);
        gsep   = base + g + h_X only for 2-separations with |X|, |E-X| >= 2 (no complement-of-singleton rows).
-Each h_X is checked to vanish on every basis before use. Usage: check_char2.py MODE [seed N] (P=2 fixed)."""
+Each h_X is checked to vanish on every basis before use. Usage: check_char2.py MODE [SEED [N_RANDOM]] (positional; P=2 fixed; "seed 2" would silently mean seed 1, N=2)."""
 import itertools, random, sys
 import check_sep_span_matroid as C
 C.P = 2
