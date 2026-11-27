@@ -1,0 +1,46 @@
+K4: V=4 E=6 T=16 id_dim=7 sep_rank=7 OK
+bowtie: V=5 E=6 T=9 id_dim=13 sep_rank=13 OK
+theta3x3 (3 paths len 3): V=8 E=9 T=27 id_dim=19 sep_rank=10 GAP
+K3,3: V=6 E=9 T=81 id_dim=10 sep_rank=10 OK
+C4 doubled edges: V=4 E=6 T=12 id_dim=11 sep_rank=7 GAP
+rand0: V=5 E=9 multi=False T=75 id_dim=10 sep_rank=10 OK
+rand1: V=4 E=6 multi=False T=16 id_dim=7 sep_rank=7 OK
+rand2: V=7 E=8 multi=False T=11 id_dim=26 sep_rank=22 GAP [(2, 6), (3, 1), (2, 0), (2, 1), (5, 0), (3, 0), (6, 0), (0, 4)]
+rand3: V=7 E=7 multi=False T=3 id_dim=26 sep_rank=26 OK
+rand4: V=7 E=11 multi=True T=128 id_dim=20 sep_rank=12 GAP [(3, 6), (1, 0), (0, 5), (5, 2), (2, 3), (6, 2), (4, 2), (3, 4), (4, 6), (5, 0), (1, 3)]
+rand5: V=6 E=10 multi=False T=104 id_dim=15 sep_rank=11 GAP [(4, 1), (1, 0), (5, 1), (3, 4), (0, 2), (5, 4), (2, 5), (1, 3), (0, 5), (2, 1)]
+rand6: V=4 E=8 multi=True T=27 id_dim=15 sep_rank=9 GAP [(1, 3), (0, 3), (2, 3), (3, 1), (1, 0), (1, 3), (0, 2), (1, 0)]
+rand7: V=5 E=6 multi=False T=8 id_dim=14 sep_rank=12 GAP [(0, 1), (2, 1), (1, 3), (0, 3), (4, 3), (4, 0)]
+rand8: V=7 E=7 multi=False T=3 id_dim=26 sep_rank=26 OK
+rand9: V=7 E=10 multi=False T=61 id_dim=23 sep_rank=20 GAP [(4, 3), (2, 3), (1, 3), (1, 5), (5, 3), (6, 1), (1, 2), (6, 0), (5, 4), (4, 6)]
+rand10: V=6 E=7 multi=False T=11 id_dim=18 sep_rank=14 GAP [(3, 0), (3, 2), (3, 4), (1, 2), (1, 5), (5, 3), (0, 5)]
+rand11: V=6 E=7 multi=False T=9 id_dim=20 sep_rank=20 OK
+rand12: V=4 E=7 multi=True T=9 id_dim=20 sep_rank=20 OK
+rand13: V=6 E=6 multi=False T=3 id_dim=19 sep_rank=19 OK
+rand14: V=7 E=12 multi=True T=76 id_dim=42 sep_rank=34 GAP [(2, 1), (1, 3), (6, 1), (2, 6), (1, 5), (6, 5), (5, 1), (4, 0), (4, 3), (6, 2), (5, 6), (3, 6)]
+rand15: V=7 E=9 multi=False T=32 id_dim=23 sep_rank=18 GAP [(3, 6), (3, 2), (3, 4), (0, 3), (4, 2), (5, 4), (6, 5), (0, 5), (4, 1)]
+rand16: V=7 E=7 multi=False T=4 id_dim=25 sep_rank=23 GAP [(5, 6), (0, 6), (2, 6), (0, 1), (3, 6), (4, 0), (3, 4)]
+rand17: V=7 E=7 multi=False T=4 id_dim=25 sep_rank=23 GAP [(5, 3), (4, 6), (3, 4), (2, 1), (0, 2), (3, 1), (1, 6)]
+rand18: V=5 E=7 multi=True T=10 id_dim=20 sep_rank=19 GAP [(1, 3), (4, 2), (1, 3), (3, 0), (2, 4), (1, 0), (4, 1)]
+rand19: V=7 E=11 multi=True T=50 id_dim=38 sep_rank=31 GAP [(2, 3), (1, 2), (2, 6), (6, 0), (1, 6), (2, 1), (5, 0), (0, 5), (0, 3), (2, 1), (4, 5)]
+rand20: V=4 E=9 multi=True T=48 id_dim=14 sep_rank=10 GAP [(1, 0), (1, 0), (3, 0), (1, 3), (2, 0), (3, 2), (2, 3), (2, 3), (1, 2)]
+rand21: V=4 E=5 multi=True T=5 id_dim=11 sep_rank=10 GAP [(3, 0), (2, 0), (2, 0), (2, 3), (3, 1)]
+rand22: V=4 E=4 multi=False T=3 id_dim=8 sep_rank=8 OK
+rand23: V=4 E=6 multi=True T=7 id_dim=15 sep_rank=12 GAP [(2, 1), (3, 1), (0, 3), (1, 3), (0, 1), (1, 3)]
+rand24: V=5 E=8 multi=True T=28 id_dim=17 sep_rank=9 GAP [(2, 0), (1, 3), (1, 3), (1, 4), (0, 3), (0, 3), (1, 4), (2, 4)]
+rand25: V=7 E=10 multi=True T=14 id_dim=44 sep_rank=41 GAP [(5, 2), (3, 6), (5, 3), (1, 4), (2, 1), (5, 2), (2, 5), (1, 4), (0, 5), (3, 2)]
+rand26: V=6 E=6 multi=False T=4 id_dim=18 sep_rank=16 GAP [(5, 4), (3, 1), (1, 4), (2, 0), (3, 0), (5, 3)]
+rand27: V=7 E=7 multi=False T=4 id_dim=25 sep_rank=23 GAP [(6, 2), (1, 3), (1, 6), (5, 3), (4, 5), (0, 1), (1, 4)]
+rand28: V=5 E=9 multi=True T=42 id_dim=22 sep_rank=18 GAP [(0, 1), (3, 0), (4, 2), (4, 2), (2, 3), (1, 2), (3, 0), (1, 3), (1, 2)]
+rand29: V=6 E=6 multi=False T=3 id_dim=19 sep_rank=19 OK
+rand30: V=6 E=6 multi=False T=4 id_dim=18 sep_rank=16 GAP [(4, 2), (4, 5), (0, 5), (0, 2), (1, 3), (0, 1)]
+rand31: V=4 E=7 multi=True T=14 id_dim=17 sep_rank=14 GAP [(3, 0), (0, 3), (3, 0), (3, 1), (3, 1), (0, 2), (2, 3)]
+rand32: V=4 E=6 multi=False T=16 id_dim=7 sep_rank=7 OK
+rand33: V=4 E=6 multi=False T=16 id_dim=7 sep_rank=7 OK
+rand34: V=5 E=5 multi=True T=2 id_dim=14 sep_rank=14 OK
+rand35: V=7 E=8 multi=False T=11 id_dim=26 sep_rank=22 GAP [(4, 6), (4, 3), (6, 2), (5, 0), (3, 5), (5, 2), (4, 2), (2, 1)]
+rand36: V=7 E=12 multi=False T=257 id_dim=19 sep_rank=13 GAP [(6, 3), (3, 0), (5, 0), (3, 5), (4, 2), (5, 4), (2, 5), (0, 6), (2, 1), (2, 3), (3, 1), (5, 1)]
+rand37: V=7 E=12 multi=False T=224 id_dim=24 sep_rank=24 OK
+rand38: V=4 E=5 multi=False T=8 id_dim=8 sep_rank=6 GAP [(2, 3), (1, 0), (0, 3), (1, 3), (2, 1)]
+rand39: V=4 E=6 multi=False T=16 id_dim=7 sep_rank=7 OK
+gaps: 28

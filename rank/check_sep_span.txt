@@ -1,0 +1,46 @@
+K4: V=4 E=6 T=16 id_dim=7 sep_rank=7 OK
+bowtie: V=5 E=6 T=9 id_dim=13 sep_rank=13 OK
+theta3x3 (3 paths len 3): V=8 E=9 T=27 id_dim=19 sep_rank=19 OK
+K3,3: V=6 E=9 T=81 id_dim=10 sep_rank=10 OK
+C4 doubled edges: V=4 E=6 T=12 id_dim=11 sep_rank=11 OK
+rand0: V=5 E=9 multi=False T=75 id_dim=10 sep_rank=10 OK
+rand1: V=4 E=6 multi=False T=16 id_dim=7 sep_rank=7 OK
+rand2: V=7 E=8 multi=False T=11 id_dim=26 sep_rank=26 OK
+rand3: V=7 E=7 multi=False T=3 id_dim=26 sep_rank=26 OK
+rand4: V=7 E=11 multi=True T=128 id_dim=20 sep_rank=20 OK
+rand5: V=6 E=10 multi=False T=104 id_dim=15 sep_rank=15 OK
+rand6: V=4 E=8 multi=True T=27 id_dim=15 sep_rank=15 OK
+rand7: V=5 E=6 multi=False T=8 id_dim=14 sep_rank=14 OK
+rand8: V=7 E=7 multi=False T=3 id_dim=26 sep_rank=26 OK
+rand9: V=7 E=10 multi=False T=61 id_dim=23 sep_rank=23 OK
+rand10: V=6 E=7 multi=False T=11 id_dim=18 sep_rank=18 OK
+rand11: V=6 E=7 multi=False T=9 id_dim=20 sep_rank=20 OK
+rand12: V=4 E=7 multi=True T=9 id_dim=20 sep_rank=20 OK
+rand13: V=6 E=6 multi=False T=3 id_dim=19 sep_rank=19 OK
+rand14: V=7 E=12 multi=True T=76 id_dim=42 sep_rank=42 OK
+rand15: V=7 E=9 multi=False T=32 id_dim=23 sep_rank=23 OK
+rand16: V=7 E=7 multi=False T=4 id_dim=25 sep_rank=25 OK
+rand17: V=7 E=7 multi=False T=4 id_dim=25 sep_rank=25 OK
+rand18: V=5 E=7 multi=True T=10 id_dim=20 sep_rank=20 OK
+rand19: V=7 E=11 multi=True T=50 id_dim=38 sep_rank=38 OK
+rand20: V=4 E=9 multi=True T=48 id_dim=14 sep_rank=14 OK
+rand21: V=4 E=5 multi=True T=5 id_dim=11 sep_rank=11 OK
+rand22: V=4 E=4 multi=False T=3 id_dim=8 sep_rank=8 OK
+rand23: V=4 E=6 multi=True T=7 id_dim=15 sep_rank=15 OK
+rand24: V=5 E=8 multi=True T=28 id_dim=17 sep_rank=17 OK
+rand25: V=7 E=10 multi=True T=14 id_dim=44 sep_rank=44 OK
+rand26: V=6 E=6 multi=False T=4 id_dim=18 sep_rank=18 OK
+rand27: V=7 E=7 multi=False T=4 id_dim=25 sep_rank=25 OK
+rand28: V=5 E=9 multi=True T=42 id_dim=22 sep_rank=22 OK
+rand29: V=6 E=6 multi=False T=3 id_dim=19 sep_rank=19 OK
+rand30: V=6 E=6 multi=False T=4 id_dim=18 sep_rank=18 OK
+rand31: V=4 E=7 multi=True T=14 id_dim=17 sep_rank=17 OK
+rand32: V=4 E=6 multi=False T=16 id_dim=7 sep_rank=7 OK
+rand33: V=4 E=6 multi=False T=16 id_dim=7 sep_rank=7 OK
+rand34: V=5 E=5 multi=True T=2 id_dim=14 sep_rank=14 OK
+rand35: V=7 E=8 multi=False T=11 id_dim=26 sep_rank=26 OK
+rand36: V=7 E=12 multi=False T=257 id_dim=19 sep_rank=19 OK
+rand37: V=7 E=12 multi=False T=224 id_dim=24 sep_rank=24 OK
+rand38: V=4 E=5 multi=False T=8 id_dim=8 sep_rank=8 OK
+rand39: V=4 E=6 multi=False T=16 id_dim=7 sep_rank=7 OK
+gaps: 0
